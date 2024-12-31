@@ -1,2 +1,2 @@
-# watchitnow
-Discover streaming availability for any show/movie in seconds!
+# Watch It Now!
+coool stuff will be here soon!

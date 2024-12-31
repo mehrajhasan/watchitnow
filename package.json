@@ -1,0 +1,12 @@
+{
+  "name": "watchitnow",
+  "version": "1.0.0",
+  "description": "Discover streaming availability for any show/movie in seconds!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
