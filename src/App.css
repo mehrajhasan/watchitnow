@@ -1,3 +1,33 @@
+/* Fonts */
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url('./assets/fonts/Poppins-Regular.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url('./assets/fonts/Poppins-Medium.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url('./assets/fonts/Poppins-SemiBold.ttf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url('./assets/fonts/Poppins-Bold.ttf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +65,98 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body{
+  background-color: rgb(13, 16, 27);
+  font-weight: 400;
+}
+
+.home-box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.search-box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 18.5%;
+}
+
+.searchprompt{
+  color: white;
+  text-align: center;
+  height: 100%;
+}
+
+/*add the font in placeholder*/
+
+#home-search{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(37, 37, 37);
+  border: 1px black;
+  width: 400px;
+  height: 40px;
+  margin-top: 5%;
+  border-radius: 20px;
+}
+
+input[type="text"]{
+  padding: 5px;
+}
+
+
+.searchresults-box{
+  padding: 5px;
+}
+
+.logo{
+  text-align: center;
+  color: white;
+  font-family: 'Poppins';
+}
+
+.query{
+  text-align: center;
+  color: rgb(97, 97, 97);
+  font-family: 'Poppins';
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 30px;
+  font-family: 'Poppins';
+}
+
+.result-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s;
+  font-family: 'Poppins';
+}
+
+.result-card:hover {
+  transform: scale(1.05);
+}
+
+.result-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.result-info {
+  padding: 5px;
 }
