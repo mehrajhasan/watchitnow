@@ -95,8 +95,6 @@ body{
   height: 100%;
 }
 
-/*add the font in placeholder*/
-
 #home-search{
   font-size: 20px;
   font-weight: 600;
@@ -159,4 +157,38 @@ input[type="text"]{
 
 .result-info {
   padding: 5px;
+}
+
+.results-box{
+  font-family: 'Poppins';
+  color: white;
+}
+.logo{
+  text-align: center;
+}
+
+.movieDetails {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 30px;
+}
+
+.movieTitle h2 {
+  margin-bottom: 0px;
+}
+
+.movieTitle h4 {
+  margin-top: -5px;
+  color: rgb(125, 125, 125);
+  font-size: 16px;
+}
+
+.moviePoster {
+  max-width: 30%;
+}
+
+.poster-image {
+  width: 100%;
+  height: auto;
 }

@@ -46,24 +46,25 @@ export const SearchResults = () => {
                 <h3>Search Results for "{query}"</h3>
             </div>
 
-                {results.length > 0 ? (
-                    <div className="results-grid">
-                        {results.map((result) => (
-                            <div key={result.id} className="result-card" onClick={() => handleClick(result.id)}>
-                                <img
-                                    src={result.image_url}
-                                    alt={`${result.name} Poster`}
-                                    className="result-image"
-                                />
-                                <div className="result-info">
-                                    <h3>{result.name}</h3>
-                                </div>
+            {results.length > 0 ? (
+                <div className="results-grid">
+                    {results.map((result) => (
+                        <div key={result.id} className="result-card" onClick={() => handleClick(result.id)}>
+                            <img
+                                src={result.image_url}
+                                alt={`${result.name} Poster`}
+                                className="result-image"
+                            />
+                            <div className="result-info">
+                                <h3>{result.name}</h3>
                             </div>
-                        ))}
-                    </div>
-                ) : (
-                    <p>No results found for "{query}".</p>
-                )}
+                        </div>
+                    ))}
+                </div>
+            ) : (
+                <p>No results found for "{query}".</p>
+            )}
+            
         </div>
     )
 };
