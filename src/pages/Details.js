@@ -65,6 +65,19 @@ export const Details = () => {
                         <div className="movieDesc">
                             <h4>{details.plot_overview}</h4>
                         </div>
+
+                        <div className="movieTrailer">
+                            <iframe
+                                width="448"
+                                height="252"
+                                src={`https://www.youtube.com/embed/${details.trailer.split("v=")[1]}`}
+                                title="Movie Trailer"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -74,7 +87,7 @@ export const Details = () => {
                     <div className="sources-grid">
                         <ul>
                             <h1>Streaming at:</h1>
-                            {sources.filter((source) => source.region === 'US' && source.type !== 'rent' && source.type !== 'buy').map((source) => (
+                            {sources.filter((source) => source.region === 'US' && source.type !== 'rent' && source.type !== 'buy' && source.type !== 'tve').map((source) => (
                                 <li key={source.source_id} className="source-card">
                                     <a href={source.web_url}>
                                         <h3>{source.name}</h3>
