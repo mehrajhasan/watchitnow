@@ -95,6 +95,12 @@ body{
   height: 100%;
 }
 
+.searchbar{
+  display: flex;
+  justify-content: center;
+  margin-top: -15.5%;
+}
+
 #home-search{
   font-size: 20px;
   font-weight: 600;

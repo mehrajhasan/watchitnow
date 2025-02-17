@@ -26,7 +26,7 @@ export const Home = () => {
                     <h2>What are you watching?</h2>
                 </div>
 
-                <div className="searchbar">
+                <div className="searchbar0">
                     <input type="text" id="home-search" placeholder="..." value={query} onChange={handleInputChange} onKeyDown={handleKeyPress}/>
                 </div>
             </div>
