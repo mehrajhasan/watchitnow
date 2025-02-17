@@ -3,17 +3,17 @@
   "name": "Watch It Now!",
   "icons": [
     {
-      "src": "moviepic.png",
+      "src": "moviepic.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "moviepic.png",
+      "src": "moviepic.ico",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "moviepic.png",
+      "src": "moviepic.ico",
       "type": "image/png",
       "sizes": "512x512"
     }
