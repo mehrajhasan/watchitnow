@@ -170,6 +170,9 @@ input[type="text"]{
 .movieDetails {
   display: flex;
   align-items: flex-start;
+  border-radius: 20px;
+  background-color: rgb(24, 28, 44);
+  margin: 15px;
   gap: 20px;
   padding: 30px;
 }
