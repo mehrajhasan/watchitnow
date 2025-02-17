@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import SearchBar from '../components/SearchBar.js';
 import axios from 'axios';
 
 const key = process.env.REACT_APP_apiKey;
@@ -44,6 +45,9 @@ export const SearchResults = () => {
             </div>
             <div className='query'>
                 <h3>Search Results for "{query}"</h3>
+            </div>
+            <div className="searchbar">
+                <SearchBar/>
             </div>
 
             {results.length > 0 ? (

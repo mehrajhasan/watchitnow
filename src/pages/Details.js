@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import SearchBar from '../components/SearchBar';
 import axios from 'axios';
 
 const key = process.env.REACT_APP_apiKey;
@@ -49,6 +50,9 @@ export const Details = () => {
         <div className="results-box">
             <div className='logo'>
                 <h1>WatchItNow!</h1>
+            </div>
+            <div className="searchbar">
+                <SearchBar/>
             </div>
             <div className="movieDetails">
                 <div className="moviePoster">
